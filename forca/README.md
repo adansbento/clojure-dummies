@@ -1,36 +1,15 @@
 # forca
-
-FIXME: description
+This application very simple hangman game
 
 ## Installation
-
-Download from http://example.com/FIXME.
+https://leiningen.org/
 
 ## Usage
 
-FIXME: explanation
+lien repl
 
-    $ java -jar forca-0.1.0-standalone.jar [args]
+2 life
+"BRASIL" word
+#{} hits
 
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2017 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+forca.core=> (forca/jogo 2 "BRASIL" #{})
