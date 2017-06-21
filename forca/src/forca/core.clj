@@ -3,8 +3,9 @@
 
 
 (def total-de-vidas 6)
-(defn perdeu[](print "Você perdeu!"))
-(defn ganhou[](print "Você ganhou!"))
+(def palavra-secreta "BRASIL")
+(defn perdeu[](println "Você perdeu!"))
+(defn ganhou[](println "Você ganhou!"))
 (defn le-letra! [] (read-line))
 (defn  acertou? [chute palavra] (.contains palavra chute))
 
@@ -40,9 +41,8 @@
                 (println "Errou a  letra!")
                 (recur (dec vidas) palavra acertos))))))
 
+(defn comece-o-jogo[]
+  (jogo total-de-vidas palavra-secreta #{}))
 
-
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
+(defn -main [& args]
+  (comece-o-jogo))
